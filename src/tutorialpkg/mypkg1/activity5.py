@@ -43,7 +43,7 @@ df_cleaned['duration'] = (df_cleaned['end'] - df_cleaned['start']).dt.days
 print(df_cleaned.dtypes)
 print(df_cleaned.duration)
 
-## Activity 10 
+## Activity 10 w
 
 
 
