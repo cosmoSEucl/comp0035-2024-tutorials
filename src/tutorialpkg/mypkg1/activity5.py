@@ -40,11 +40,11 @@ df_cleaned['start'] = pd.to_datetime(df_cleaned['start'], dayfirst=True)
 df_cleaned['end'] = pd.to_datetime(df_cleaned['end'], dayfirst=True)
 
 df_cleaned['duration'] = (df_cleaned['end'] - df_cleaned['start']).dt.days
-print(df_cleaned.dtypes)
-print(df_cleaned.duration)
+
 
 ## Activity 10
-# 
+output_path = 'src/tutorialpkg/data/paralympics_events_prepared.csv'
+df_cleaned.to_csv(output_path, index=False)
 
 
 
