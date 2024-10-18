@@ -46,7 +46,5 @@ df_cleaned['duration'] = (df_cleaned['end'] - df_cleaned['start']).dt.days
 output_path = 'src/tutorialpkg/data/paralympics_events_prepared.csv'
 df_cleaned.to_csv(output_path, index=False)
 
-
-
-
+print(df_cleaned.participants_m)
 
